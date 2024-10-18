@@ -1,4 +1,7 @@
 {
+  "compilerOptions": {
+    "types": ["node", "vue-router"]
+  },
   "files": [],
   "references": [
     {

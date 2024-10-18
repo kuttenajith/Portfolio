@@ -8,7 +8,6 @@
         <router-link to="/experience">Experience</router-link>
         <router-link to="/contact">Contact</router-link>
       </nav>
-      <ThemeToggle @toggleTheme="toggleTheme" />
     </header>
     <router-view />
   </div>
