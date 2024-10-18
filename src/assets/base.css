@@ -57,11 +57,23 @@
   margin: 0;
   font-weight: normal;
 }
-
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 2em
+}
+::-webkit-scrollbar-button {
+  background: #ccc
+}
+::-webkit-scrollbar-track-piece {
+  background: #888
+}
+::-webkit-scrollbar-thumb {
+  background: #eee
+}​
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
+  color: var(--vt-c-black);
+  background: linear-gradient(180deg, #fffeff 20%, #d7fffe 50%);
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -83,4 +95,53 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+/* Responsive styling */
+.container {
+  width: 100%;  /* Full width */
+  max-width: 1200px;  /* Set maximum width for laptop screens */
+  margin: 0 auto;  /* Center container */
+  padding: 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem; /* Use rem units for responsiveness */
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+  /* Adjust layout for smaller laptop screens */
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust layout for tablet and mobile devices */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for mobile phones */
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
 }
