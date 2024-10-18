@@ -145,7 +145,7 @@ ul {
 .project-link {
   text-decoration: none;
   color: #007bff;
-  background-color: #f0f0f0;
+  background-color: #d7fffe;
   padding: 10px 15px;
   border-radius: 5px;
   font-weight: bold;
