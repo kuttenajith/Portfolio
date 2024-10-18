@@ -77,4 +77,10 @@ button:hover {
   background-color: white;
   border: 1px solid #d7fffe;
 }
+
+@media screen and (max-width: 576px) {
+  .element {
+    padding: 10px !important;
+  }
+}
 </style>
