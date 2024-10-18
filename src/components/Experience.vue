@@ -10,7 +10,7 @@
         >
           <div class="experience-details">
             <h3>{{ experience.title }}</h3>
-            <span>{{ experience.designation }}</span>
+            <span class="designation">{{ experience.designation }}</span>
             <ul class="description-list">
               <li
                 v-for="(point, index) in experience.description"
@@ -38,41 +38,49 @@ export default {
           title: "Celsior Technologies",
           designation: "Module Lead",
           description: [
-            `Took ownership of the Safety module and implemented it with high quality. Initiated Leverage discussion, and modified
-device control feature, which improved Analytics for inventory and Utilization.`,
-            `Jest was utilized as the unit testing framework to verify the code.`,
-            `Provided solutions for Map-related Leverage bugs. Made sure sprint goals are achieved on the date. Participated in planning
-and sprint demos.`,
+            `Design and implement software modules, ensuring alignment with overall project architecture and introduced new features
+and maintenance of existing features.`,
+            `Involve in developing the complete front end development using Tailwind CSS, JavaScript, React, Next.js. Work with multiple
+onshore teams.
+`,
+            `Managed the production deployment process, ensuring smooth and efficient releases using GitLab, Jira (used to define
+release goals and prioritize tasks).
+`,
           ],
           duration: "October 2023 - Present",
         },
         {
           id: 2,
-          title: "CIRCULAR-CITY(UI), London, United Kingdom",
+          title: "CodeCraft Technologies",
+          designation: "Senior Engineer",
           description: [
-            `Took ownership of the UI with responsiveness and designed it with high quality. Provided solutions for media query-related
-bugs. Made sure sprint goals are achieved on the date.`,
-            `Worked in python for the back end, supported team to achieve goals on date and deals with client directly.`,
+            `Worked with Node Packet Manager(NPM), Dynamo DB and used React and VUE.js library functions and GraphQL for the
+logical implementation part at client side for all the application.`,
+            `Worked with Vuex for the state management and deals with client directly for the scrum and sprint meetings, make sure
+sprint goals are achieved on a date`,
+            `Maintained and improved existing codebases and review code changes.`,
           ],
           duration: "August 2022 - October 2023",
         },
         {
           id: 3,
-          title: "Telematic VIA Motors, React js - United States",
+          title: "Tanisha Systems",
+          designation: "Application Developer",
           description: [
-            `Took ownership of the motor tree, vehicle list view module and took ownership implemented it with high quality. Provided
-solutions for relationship-tree fix`,
-            `Examined the team's code modifications to make sure they had created an optimal solution.`,
+            `Implemented and optimized micro front-end architectures for seamless integration and scalability`,
+            `Participated actively in Agile/Scrum meetings and contribute to continuous improvement.`,
+            `Collaborated with cross-functional teams to gather requirements and create technical solutions.`,
           ],
           duration: "April 2021 - August 2022",
         },
         {
           id: 4,
-          title: "HELPZ, Vue js - United Kingdom",
+          title: "Zencode Group",
+          designation: "Frontend Developer",
           description: [
-            `Took ownership of the Admin end and implemented it with high quality.`,
-            `Responsible for development of new features and maintenance of existing features, and responsible for all phases of development.`,
-            `Vitest was utilized as the unit testing framework to verify the code.`,
+            `Demonstrated expertise in HTML5, CSS3, object-orientated JavaScript and large JavaScript applications.`,
+            `Handled Interns to instruct python fundamentals and things.`,
+            `Handled OAuth and JWT protocols to ensure secure authentication and authorization`,
           ],
           duration: "December 2018 - April 2021",
         },
@@ -86,6 +94,10 @@ solutions for relationship-tree fix`,
 .Experience-section {
   padding: 20px;
   text-align: center;
+}
+.designation {
+  font-weight: bold;
+  color: #5e5959;
 }
 
 h2 {
@@ -130,6 +142,7 @@ h3 {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
+  padding: 10px 0px;
 }
 
 .description-list {
