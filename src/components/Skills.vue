@@ -93,4 +93,9 @@ export default defineComponent({
   font-size: 1.2rem;
   font-weight: 500;
 }
+@media screen and (max-width: 576px) {
+  .skills-container {
+    padding: 30px 0px;
+  }
+}
 </style>
