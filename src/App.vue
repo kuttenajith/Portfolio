@@ -36,4 +36,22 @@ export default {};
   padding: 30px;
   text-align: center;
 }
+@media screen and (max-width: 576px) {
+  .header-part {
+    padding: 15px 0px;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d7fffe;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+  }
+  .body-section {
+    padding: 70px 0px;
+  }
+}
 </style>
