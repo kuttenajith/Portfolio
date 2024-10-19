@@ -171,14 +171,6 @@ h3 {
   margin-bottom: 10px;
 }
 
-.project-description {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 4.5em;
-}
 @media screen and (max-width: 576px) {
   .projects-section,
   .description-list {
@@ -191,6 +183,7 @@ h3 {
   .project-description {
     display: block;
     text-align: center;
+    font-size: 13px;
   }
   h2 {
     margin-bottom: 10px;

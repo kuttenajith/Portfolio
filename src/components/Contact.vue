@@ -1,6 +1,9 @@
 <template>
   <div>
     <h2>Contact Me</h2>
+    <p v-if="formSubmitted" class="greet-message">
+      Thank you for contacting me! I'll get back to you soon.
+    </p>
     <form @submit.prevent="submitForm" class="form-elements">
       <div class="element">
         <label for="name">Your Name:</label>
@@ -52,11 +55,29 @@ export default {
         email: "",
         message: "",
       },
+      formSubmitted: false,
     };
   },
   methods: {
-    submitForm() {
-      console.log("Form submitted:", this.form);
+    async submitForm() {
+      this.formSubmitted = true;
+      // try {
+      //   const response = await fetch("http://localhost:3000/send-sms", {
+      //     method: "POST",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify(this.form),
+      //   });
+      //   const result = await response.json();
+      //   if (result.success) {
+      //     this.formSubmitted = true;
+      //   } else {
+      //     this.formSubmitted = true;
+      //   }
+      // } catch (error) {
+      //   console.error("Error sending SMS:", error);
+      // }
     },
   },
 };
@@ -86,6 +107,10 @@ h2 {
   border-radius: 15px;
   border-color: aquamarine;
   box-shadow: 4px 4px #d7fffe;
+}
+.greet-message {
+  color: #04b2ae;
+  font-weight: bold;
 }
 .form-elements .element textarea {
   width: 100%;

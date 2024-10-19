@@ -9,7 +9,10 @@
           class="experience-item"
         >
           <div class="experience-details">
-            <h3>{{ experience.title }}</h3>
+            <div class="topic-part">
+              <h3>{{ experience.title }}</h3>
+              <span>{{ experience.duration }}</span>
+            </div>
             <span class="designation">{{ experience.designation }}</span>
             <ul class="description-list">
               <li
@@ -21,7 +24,6 @@
               </li>
             </ul>
           </div>
-          <span>{{ experience.duration }}</span>
         </li>
       </ul>
     </div>
@@ -91,6 +93,15 @@ sprint goals are achieved on a date`,
 </script>
 
 <style scoped>
+.topic-part {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.topic-part span {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
 .Experience-section {
   padding: 20px;
   text-align: center;
@@ -102,7 +113,6 @@ sprint goals are achieved on a date`,
 
 h2 {
   text-align: center;
-  margin-bottom: 30px;
   font-weight: bold;
 }
 
@@ -116,10 +126,6 @@ ul {
   align-items: center;
   margin-bottom: 20px;
   padding: 10px;
-}
-
-.experience-details {
-  flex-basis: 70%;
 }
 
 .experience-link {
@@ -153,15 +159,11 @@ h3 {
   margin-bottom: 10px;
 }
 
-.experience-description {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 4.5em;
-}
 @media screen and (max-width: 576px) {
+  .topic-part {
+    flex-direction: column;
+    align-items: center;
+  }
   .projects-section,
   .description-list {
     padding: 0px;
@@ -173,6 +175,7 @@ h3 {
   .experience-description {
     display: block;
     text-align: center;
+    font-size: 13px;
   }
 }
 </style>
