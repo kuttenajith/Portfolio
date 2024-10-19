@@ -103,20 +103,19 @@ sprint goals are achieved on a date`,
 h2 {
   text-align: center;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 ul {
   text-align: left;
   padding: 0;
 }
-
 .experience-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
 }
 
 .experience-details {

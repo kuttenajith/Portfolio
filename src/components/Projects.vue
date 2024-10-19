@@ -122,6 +122,7 @@ Participated in planning and sprint demos.`,
 h2 {
   text-align: center;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 ul {
@@ -135,7 +136,6 @@ ul {
   align-items: center;
   margin-bottom: 20px;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
 }
 
 .project-details {
@@ -145,7 +145,6 @@ ul {
 .project-link {
   text-decoration: none;
   color: #007bff;
-  background-color: #d7fffe;
   padding: 10px 15px;
   border-radius: 5px;
   font-weight: bold;

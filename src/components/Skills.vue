@@ -73,12 +73,17 @@ export default defineComponent({
   padding: 30px;
 }
 
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
 .skill {
   display: flex;
   flex-direction: column;
   padding: 30px;
   align-items: center;
-  background-color: #d7fffe;
+  background-color: aliceblue;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
