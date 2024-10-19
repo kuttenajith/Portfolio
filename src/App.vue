@@ -61,7 +61,7 @@ export default {
   transform: scale(1.1);
 }
 .header-part {
-  padding: 30px 0px 0px 0px;
+  padding: 30px 10px 0px 0px;
   display: flex;
   justify-content: end;
 }
