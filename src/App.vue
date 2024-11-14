@@ -61,9 +61,16 @@ export default {
   transform: scale(1.1);
 }
 .header-part {
-  padding: 30px 10px 0px 0px;
+  padding: 10px;
   display: flex;
   justify-content: end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d7fffe;
+  text-align: center;
+  z-index: 1000;
 }
 .header-part a {
   padding: 0px 5px;
@@ -74,7 +81,7 @@ export default {
   color: black;
 }
 .body-section {
-  padding: 30px;
+  padding: 60px 30px;
   text-align: center;
 }
 .footer-part {

@@ -61,6 +61,7 @@ export default {
   methods: {
     async submitForm() {
       this.formSubmitted = true;
+      this.form = "";
       // try {
       //   const response = await fetch("http://localhost:3000/send-sms", {
       //     method: "POST",
